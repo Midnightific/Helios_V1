@@ -87,55 +87,5 @@ const rest = new REST({ version: '9' }).setToken(process.env.TOKEN);
 
 })();
 
-/*
-client.on("guildMemberAdd", member => {
-  const guildMemberAddedSignal = new MessageEmbed()
-    .setAuthor({ name: `📥 ${member.user.username} has joined!` })
-    .setDescription(member.user.id)
-    .addField('Something wrong?', "Click the button below to mark as suspicious!", true)
-    .setColor("AQUA")
-  const markSuspicious = new MessageEmbed()
-    .setAuthor({ name: `⛔️ ${member.user.username} has been marked suspicious!` })
-    .setDescription(member.user.id)
-    .setColor("RED")
-
-  const button1 = new MessageButton().setCustomId('mark_suspicious').setLabel('Mark as Suspicious').setStyle('DANGER');
-  const components = new MessageActionRow().addComponents(button1)
-
-  const Channel = client.channels.cache.get(config.log_channel)
-  const reports = client.channels.cache.get(config.report_channel)
-
-  Channel.send({ embeds: [guildMemberAddedSignal], components: [components] })
-
-  const filter = i => i.user.id == member.user.id;
-  const collector = Channel.createMessageComponentCollector({ filter, time: 15000 });
-
-  collector.on('collect', async i => {
-    button1.setStyle("SECONDARY")
-    button1.setDisabled(true)
-    await i.update({ components: [new MessageActionRow().addComponents(button1)] })
-    if (i.customId === 'mark_suspicious') {
-
-      reports.send({ embeds: [markSuspicious] })
-
-    }
-  })
-
-  collector.on('end', collected => console.log(`Collected ${collected.size} items`));
-})
-
-client.on("guildMemberRemove", member => {
-  const guildMemberLeftSignal = new MessageEmbed()
-    .setAuthor({ name: `👋 ${member.user.username} has left!` })
-    .setDescription(member.user.id)
-    .setColor("DARKER_GREY")
-
-  const Channel = client.channels.cache.get(config.log_channel)
-
-  Channel.send({ embeds: [guildMemberLeftSignal] })
-
-})
-*/
-
 client.login(token);
 server();
