@@ -1,7 +1,7 @@
 {
-	"clientId": "911818982808510524",
-	"guildId": "906435387239571457",
-	"token": "OTExODE4OTgyODA4NTEwNTI0.YZm7mg._YpkEnCPvXpu5tJmCz1i4mSVZmU",
+	"clientId": "Client Id here",
+	"guildId": "Guild Id here",
+	"token": "Your token here",
 	"roles": {
 		"TA": "The Administrator",
 		"O5": "O5 Council",
