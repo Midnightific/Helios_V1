@@ -1,0 +1,16 @@
+{
+	"clientId": "911818982808510524",
+	"guildId": "906435387239571457",
+	"token": "OTExODE4OTgyODA4NTEwNTI0.YZm7mg._YpkEnCPvXpu5tJmCz1i4mSVZmU",
+	"roles": {
+		"TA": "The Administrator",
+		"O5": "O5 Council",
+		"SiD": "Site Director",
+		"L4": "Security Level 4",
+		"L3": "Security Level 3",
+		"HMod": "Head Moderator",
+		"SMod": "Senior Moderator",
+		"CMod": "Community Moderator",
+		"PMod": "Probationary Moderator"
+	}
+}
